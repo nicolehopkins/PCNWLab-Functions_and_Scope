@@ -9,10 +9,13 @@ if that number is > 100, should return NaN
 if invalid input given, return -1
 ******************/
 
-function myAge( ageNow, numYears ) {
-       
-}
+function myAge(ageNow, numYears) {
 
+    return ageNow + numYears
+
+}
+ 
+console.log(myAge(34, 60))
 
 
 /******************
@@ -31,10 +34,11 @@ Concatenating string variables
 
 function myConcatenate( firstStr, secondStr, thirdStr ) {
     
+    return firstStr + secondStr + thirdStr
 }
 
-myConcatenate('I', 'am', 'iron man'); // 'I am iron man'
 
+console.log(myConcatenate('I', ' am', ' iron man')); // 'I am iron man'
 /******************
 Subtract Function
 
@@ -45,8 +49,11 @@ Ensure that both of the inputs are numbers
 ******************/
 
 function subtract(a,b) {
-    
+
+    return a - b
 }
+
+console.log(subtract(3,5))
 
 /******************
 Area of A Circle
@@ -62,8 +69,9 @@ A = π * r2, where is π is Pi and r is the radius squared
 
 function areaOfaCircle(radius){
     
-    
+    return 3.14 * (radius * 2)
 }    
+console.log(areaOfaCircle(8))    
 
 /******************
 Temperature Converter Fahrenheit to Celsius
@@ -74,8 +82,14 @@ Now store a fahrenheit temperature into a variable.
 
 Convert it to celsius and output "NN°F is NN°C."
 ******************/
+ function fahrenheitToCelsius(fahrenheit) {
 
+    const celsius = ((fahrenheit -32) * .5556)
+    return celsius
 
+ }
+
+ console.log(fahrenheitToCelsius(70))
 /******************
 Temperature Converter Celsius to Fahrenheit
 
@@ -85,6 +99,8 @@ Store a celsius temperature into a variable.
 
 Convert it to fahrenheit and output "NN°C is NN°F".
 ******************/
+
+
 
 
 /******************
