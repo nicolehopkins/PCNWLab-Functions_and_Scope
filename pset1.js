@@ -71,7 +71,7 @@ function areaOfaCircle(radius){
     
     return Math.PI * (radius ** 2)
 }    
-console.log(areaOfaCircle(8))    
+console.log("Area is " + areaOfaCircle(8))    
 
 /******************
 Temperature Converter Fahrenheit to Celsius
@@ -147,6 +147,12 @@ The absolute value of a negative number is the positive version of that same num
 and the absolute value of a positive number (or zero) is that number itself.
 ******************/
 
+function absolute(number) {
+
+return Math.abs(number)
+
+}
+console.log(absolute(-83))
 
 /******************
 Create a function that counts the number of characters in your name
@@ -159,4 +165,10 @@ return the number of characters in the string
 call function 'countChars'
 ******************/
 
+function characterCounter(name) {
 
+    return name.length
+
+}
+
+console.log(characterCounter("Nicole Lynn Hopkins"))
