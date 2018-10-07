@@ -53,7 +53,7 @@ function subtract(a,b) {
     return a - b
 }
 
-console.log(subtract(3,5))
+console.log(subtract(5,9))
 
 /******************
 Area of A Circle
@@ -69,7 +69,7 @@ A = π * r2, where is π is Pi and r is the radius squared
 
 function areaOfaCircle(radius){
     
-    return 3.14 * (radius * 2)
+    return Math.PI * (radius ** 2)
 }    
 console.log(areaOfaCircle(8))    
 
@@ -100,8 +100,14 @@ Store a celsius temperature into a variable.
 Convert it to fahrenheit and output "NN°C is NN°F".
 ******************/
 
+function celsiusToFahrenheit(celsius) {
 
+const fahrenheit = ((celsius * .5556) + 32)
+return fahrenheit
 
+}
+
+console.log(celsiusToFahrenheit(70))
 
 /******************
 Is it the weekend?
@@ -119,7 +125,16 @@ console.log(today); // No, it's the weekday
 If you are having trouble, please note that Javascript has a helpful built-in function to help get the current day
 ******************/
 
+// function isItTheWeekend() {
+ 
+//     if Date === Saturday || Sunday
+//     console.log("Yes, it is the weekend");
 
+//     if Date !== Saturday || Sunday
+//     console.log("no, it is not the weekend");
+// }
+
+// return(isItTheWeekend(monday))
 
 /******************
 Finding the absolute value of a number
