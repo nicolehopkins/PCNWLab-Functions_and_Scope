@@ -103,12 +103,13 @@ Convert it to fahrenheit and output "NN°C is NN°F".
 
 function celsiusToFahrenheit(celsius) {
 
+    console.log(celsius + "C is equal to...")
 const fahrenheit = ((celsius * .5556) + 32)
 return fahrenheit
 
 }
 
-console.log(celsiusToFahrenheit(70))
+console.log(celsiusToFahrenheit(70) + "F")
 
 /******************
 Is it the weekend?
@@ -150,6 +151,7 @@ and the absolute value of a positive number (or zero) is that number itself.
 
 function absolute(number) {
 
+    console.log("the number param is " + number + " and has the absolute value of...")
 return Math.abs(number)
 
 }
@@ -167,7 +169,7 @@ call function 'countChars'
 ******************/
 
 function characterCounter(name) {
-console.log("the length of my name is...")
+console.log("My names is " + name + " and the length of my name is...");
     return name.length
 
 }
