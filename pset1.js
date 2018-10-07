@@ -14,8 +14,8 @@ function myAge(ageNow, numYears) {
     return ageNow + numYears
 
 }
-
-console.log(myAge(34, 50))
+ 
+console.log(myAge(34, 60))
 
 /******************
 Concatenate Strings
