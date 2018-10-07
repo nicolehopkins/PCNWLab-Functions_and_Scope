@@ -84,12 +84,13 @@ Convert it to celsius and output "NN°F is NN°C."
 ******************/
  function fahrenheitToCelsius(fahrenheit) {
 
+    console.log(fahrenheit + "F is...")
     const celsius = ((fahrenheit -32) * .5556)
     return celsius
 
  }
 
- console.log(fahrenheitToCelsius(70))
+ console.log(fahrenheitToCelsius(70) + "C")
 /******************
 Temperature Converter Celsius to Fahrenheit
 
@@ -152,7 +153,7 @@ function absolute(number) {
 return Math.abs(number)
 
 }
-console.log(absolute(-83))
+console.log(absolute(-90))
 
 /******************
 Create a function that counts the number of characters in your name
@@ -166,7 +167,7 @@ call function 'countChars'
 ******************/
 
 function characterCounter(name) {
-
+console.log("the length of my name is...")
     return name.length
 
 }
